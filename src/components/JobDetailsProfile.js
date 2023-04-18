@@ -37,7 +37,7 @@ const JobDetailsProfile = ({ job }) => {
                      <h4>${job.pay}/hour</h4>
                      {/* <p className='location'>{job.city}, {job.province}</p> */}
                      <Button sx={{mt: 2, mr: 1, bgcolor: 'background.paper'}}variant="outlined" startIcon={<EditIcon />}>Edit Listing</Button>
-                     <Button sx={{mt: 2}}variant="contained" onClick={handleClick} startIcon={<DeleteIcon />}>Delete Listing</Button>
+                     <Button sx={{mt: 2, bgcolor: '#0A5'}}variant="contained" onClick={handleClick} startIcon={<DeleteIcon />}>Delete Listing</Button>
 
                  </div>
 

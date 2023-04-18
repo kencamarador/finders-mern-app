@@ -32,7 +32,7 @@ function App() {
                 >
                 <Route path="api/jobs/:id" element={<JobSelectOne />} />
                 <Route path="" element={user ? <Home/> : <Navigate to="/login"/>} />
-                <Route path="create" element={<AddJob />} />
+                <Route path="create" element={user ? <AddJob /> : <Navigate to="/login"/>} />
                 <Route path="profile" element={user ? <Profile /> : <Navigate to="/login"/>} />
 
                 </Route>
